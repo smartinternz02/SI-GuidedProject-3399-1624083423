@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+.recom
+{
+align="center"
+}
+
+</style>
+</head>
+<body bgcolor='#70b5b4'>
+<center>
+<h1 align="center">Movie Recommendation Based On Emotion &#128516</h1>
+<h1 align="center">Select your Emotion &#x1F447</h1><br><br>
+<form name="recom" action={{url_for('predict')}}  method="POST">
+<select id="emojis" name="recom" align="center" width=20>
+<option value="Sad" name="Sad"> sad</option>
+<option value="Trust" name="Trust"> trust</option>
+<option value="Enjoyment" name="Enjoyment"> enjoy</option>
+<option value="Anger" name="Anger"> anger</option>
+<option value="Anticipation" name="Anticipation">Anticipation</option>
+</select>
+<button type="Submit">Predict</button>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body bgcolor="#d4d1a9">
+<h1 align="center">Top Pick For You &#x1F447	</h1>
+<center>
+<table border=2px cellpadding="3px">
+{%for movie in prediction_text%}
+<tr><td><h3>{{movie[0]}}</h3></td><td><h3>{{movie[1]}}</h3></td></tr>
+{%endfor%}
+</table>
+</center>
+</body>
+</html>
